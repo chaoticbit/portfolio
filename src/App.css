@@ -1,0 +1,75 @@
+@font-face {
+font-family: BrownThin;
+src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299872247615488/BrownStd-Thin.otf?fca7e08bef);
+}
+  
+@font-face {
+font-family: BrownLight;
+src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299872247615488/BrownStd-Light.otf?9e27f97a1a);
+}
+
+@font-face {
+font-family: BrownReg;
+src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299872247615488/BrownStd-Regular.otf?ce59100598);
+}
+
+@font-face {
+font-family: BrownBold;
+src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299872247615488/BrownStd-Bold.otf?d84b87ab11);
+}
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.header {
+    background: #292929;        
+	padding: 50px 100px 150px 100px;
+	width: 100%;
+}
+.miniBio {
+	font-family: 'BrownLight', sans-serif;
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 100px;
+	color: #fff;
+	max-width: 500px;
+	line-height: 34px;
+	margin-top: 50px;
+ }
+ .thumbnailBgContainer {     
+     min-height: 300px;
+     max-height: 450px;
+     height: 100%;
+ }
+ .overlay {
+    background-color: rgba(0,0,0,0.65);    
+}
+.overlay > .blur {
+    backdrop-filter: blur(10px);
+}
+.brownLight {
+    font-family: "BrownLight";
+}
