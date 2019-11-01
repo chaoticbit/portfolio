@@ -17,9 +17,22 @@ src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299
 font-family: BrownBold;
 src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299872247615488/BrownStd-Bold.otf?d84b87ab11);
 }
+
+@font-face {
+    font-family: DankMonoRegular;
+    src: url('./DankMono-Regular.otf');
+}
+
+@font-face {
+    font-family: DankMonoItalic;
+    src: url('./DankMono-Italic.otf');
+}
+
+
 *{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
+    font-family: 'DankMonoRegular','BrownReg',sans-serif;
 }
 .App {
   text-align: center;
@@ -45,31 +58,79 @@ src: url(https://assets.cdn.cargocollective.com/594785/1761462715059214142120299
 }
 
 .header {
-    background: #292929;        
+    background: #000000;        
 	padding: 50px 100px 150px 100px;
 	width: 100%;
 }
-.miniBio {
-	font-family: 'BrownLight', sans-serif;
-	font-size: 24px;
+.bodyContainer {
+    width: 100%;    
+}
+
+.italic-style {
+    font-family: 'DankMonoItalic', 'BrownReg';
+}
+.regular-style {
+    font-family: 'DankMonoRegular', 'BrownReg';
+}
+
+.miniBio {	
+	font-size: 26px;
 	text-align: left;
-	margin-bottom: 100px;
-	color: #fff;
+	margin-bottom: 100px;	
 	max-width: 500px;
 	line-height: 34px;
 	margin-top: 50px;
  }
  .thumbnailBgContainer {     
-     min-height: 300px;
+     min-height: 250px;
      max-height: 450px;
      height: 100%;
+     background-size: contain;          
+     z-index: 0;
  }
  .overlay {
-    background-color: rgba(0,0,0,0.65);    
+    background-color: rgba(0,0,0,0.75);    
 }
 .overlay > .blur {
     backdrop-filter: blur(10px);
 }
 .brownLight {
     font-family: "BrownLight";
+}
+
+.illustration{
+    height: 400px;
+    width: 400px;    
+    filter:invert(1);
+    -webkit-filter:invert(1);
+}
+.illustration.one {
+    background: url('https://st.depositphotos.com/1062085/3319/v/950/depositphotos_33193293-stock-illustration-website-design-doodle-elements.jpg') no-repeat center;
+    background-size: contain;
+}
+.illustration.two {
+    background: url('https://static.vecteezy.com/system/resources/previews/000/457/353/non_2x/vector-programming-flat-line-design-black-and-white-doodle-style-design-in-blue-banners-and-illustrations-of-business-and-technology-themes.jpg') no-repeat center;
+    background-size: contain;
+}
+
+@media (min-width:320px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .header { padding: 50px; }
+    .illustration { display: none;}
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .illustration { display: block;}
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+}
+
+.cardNav {
+    z-index: 9;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.7);
 }

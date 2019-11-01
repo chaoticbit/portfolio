@@ -6,35 +6,34 @@ const Projects = (props) => {
     return (
         <div className="container mx-auto mt-10">
             <div className="flex flex-wrap">
-                <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
+                <div className="w-full sm:w-full md:w-1/3 lg:w-1/3">
                     <Thumbnail 
-                        image="https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_1280.jpg"                    
+                        image="https://httpsimage.com/v2/4538636a-8d9e-4b45-a1b2-0a9e95f83279.png"
                         overlay={true}
-                        title="Flagship Badges"
+                        title="Segmented Control React"
+                        git="https://www.npmjs.com/segmented-control-react"
+                        link="/SegmentedControlReact"
                     />
                 </div>
-                <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
-                    <Thumbnail 
-                        overlay={false}
-                    />
+                <div className="w-full sm:w-full md:w-1/3 lg:w-1/3">
+                    
+                </div>
+                <div className="w-full sm:w-full md:w-1/3 lg:w-1/3">
+                    
                 </div>
             </div>
             <div className="flex">
-                <div className="w-full">
-                    <Thumbnail />
-                </div>
+                
             </div>
             <div className="flex flex-wrap">
-                <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
-                    <Thumbnail />
-                </div>
+                
                 <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
                     <div className="flex flex-wrap">
                     <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
-                        <Thumbnail />
+                
                     </div>
                     <div className="w-full sm:w-full md:w-1/2 lg:w-1/2">
-                        <Thumbnail />
+                
                     </div>
                     </div>                    
                 </div>
